@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: #0E3D59; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0A0140; 
+    border-radius: 3px; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #05F29B;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+header a {
+    text-decoration: none;
+    color: #135b85;
+    font-size: 25px;
+    margin: 0 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+header a:hover {
+    color: #0A0140;
+}
+
+.logo { 
+    margin: 0 70px;
+}
+
+.logo img {
+    width: 200px;
+    height: 200px;
+}
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.esquerda,
+.direita {
+    flex: 1;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+/*--------------------Lado esquerdo--------------------*/
+
+.esquerda {
+    background-color: #333;
+    color: #FFFFFF;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.frase {
+    font-size:40px
+}
+
+.nome {
+    color: #135b85;
+}
+
+.texto {
+    text-align: justify;
+    font-size: 22px;
+    margin-top: 100px;
+}
+
+/*--------------------Lado direito--------------------*/
+
+.direita {
+    background-color: #555;
+    color: #FFFFFF;
+}
+
+.avatar-container {
+    width: 500px;
+    height: 500px;
+    background-color: #0077B5;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#avatar {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.botao {
+	box-shadow:inset 0px 0px 0px 0px #3dc21b;
+	background-color:#05f283;
+	border-radius:25px;
+	border:4px solid #04bf8a;
+	display:inline-block;
+	cursor:pointer;
+	color:#135b85;
+	font-size:28px;
+	padding:20px 25px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #005f28;
+    margin-top: 30px;
+    font-family: "Poppins", sans-serif;
+}
+
+.botao:hover {
+	background-color:#135b85;
+    border-color: #0A0140;
+    color: #05f283;
+}
+
+.botao:active {
+	position:relative;
+	top:1px;
+}
+
+/*--------------------Iníco do footer--------------------*/
+
+footer {
+    background-color: #05F29B;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+    width: 100vw;
+}
+
+.redes-sociais {
+    margin-top: 10px;
+}
+
+.redes-sociais a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #135b85; 
+    border-radius: 50%; 
+    margin: 0 10px;
+    text-align: center;
+    line-height: 50px; 
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 24px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.redes-sociais a:hover {
+    background-color: #0A0140; 
+}
+
+/*--------------------Responsividade--------------------*/
+
+@media (max-width: 1366px) {
+
+    .avatar-container {
+        width: 400px;
+        height: 400px;
+    }
+
+    .botao {
+        margin-top: 35px;
+    }
+}
+
+
+@media (max-width: 1175px) {
+
+    .texto {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1015px) {
+
+    .texto {
+        font-size: 18px;
+    }
+
+    .avatar-container {
+        width: 350px;
+        height: 350px;
+    }
+
+    .botao {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 920px) {
+
+    .texto {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 895px) {
+
+    .texto {
+        font-size: 15px;
+    }
+
+    .avatar-container {
+        width: 400px;
+        height: 400px;
+    }
+
+    .botao {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: row; 
+    }
+
+    header a {
+        font-size: 20px; 
+        margin: -15px; 
+    }
+
+    .logo {
+        margin: 10px 30px; 
+    }
+
+    .logo img {
+        width: 150px; 
+        height: 150px; 
+    }
+
+    .container {
+        flex-direction: column; 
+    }
+
+    .esquerda,
+    .direita {
+        width: 100%; 
+    }
+
+    .avatar-container {
+        width: 300px; 
+        height: 300px; 
+    }
+
+    #avatar {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .botao {
+        margin-top: 20px; 
+        margin-bottom: 12vh;
+    }
+
+    footer {
+        position: fixed;
+        height: auto;
+        bottom: -2rem;
+        width: 100%;
+        margin-top: -100px; 
+    }
+
+    .redes-sociais {
+        margin-top: 10px; 
+    }
+
+    .redes-sociais a {
+        width: 50px;
+        height: 50px;
+        background-color: #135b85; 
+        border-radius: 50%; 
+        margin: 0 10px;
+        text-align: center;
+        line-height: 50px; 
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 24px;
+        transition: background-color 0.3s ease-in-out;
+    }
+}
